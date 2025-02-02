@@ -33,8 +33,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int _maxJumps = 1;
     private int _jumps;
 
-    // Animator
-   // private Animator _anim = null;
+
+    // Respawn pos
+    [SerializeField] private Vector2 _respawnPos = new Vector2(0, 0);
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -127,7 +128,7 @@ public class PlayerController : MonoBehaviour
 
     public void HurtPlayer(int damage)
     {
-        Debug.Log("YEOWCH");
+        transform.position = (Vector3)_respawnPos;
     }
 
     public BreadType GetBreadType()
@@ -153,5 +154,20 @@ public class PlayerController : MonoBehaviour
     public bool GetLastGroundedOnRealGround()
     {
         return _lastGroundedOnRealGround;
+    }
+
+    public void SetRespawnPos(Transform newPosTrans)
+    {
+        _respawnPos = new Vector2(newPosTrans.position.x, newPosTrans.position.y);
+    }
+
+    public void SetRespawnPos(Vector2 newPos)
+    {
+        _respawnPos = newPos;
+    }
+
+    public Vector2 GetRespawnPos()
+    {
+        return _respawnPos;
     }
 }

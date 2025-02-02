@@ -26,6 +26,8 @@ public class CharacterController : MonoBehaviour
     private bool _hasDblJump = false;
     private bool _hasGrounded = false;
 
+    private Vector2 _respawnPos;
+
     void Start()
     {
         GetPlayerAndCamera();
@@ -103,6 +105,10 @@ public class CharacterController : MonoBehaviour
                 _newPC.SetJumps(0);
             }
         }
+
+        // Get and set respawnpos
+        _respawnPos = _PC.GetRespawnPos();
+        _newPC.SetRespawnPos(_respawnPos);
 
         // Destroy and reassign player
         Destroy(_player);
