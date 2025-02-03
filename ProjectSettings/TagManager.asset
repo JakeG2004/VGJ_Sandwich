@@ -8,6 +8,7 @@ TagManager:
   - Fire
   - FrenchPlatform
   - Ground
+  - PauseMenu
   layers:
   - Default
   - TransparentFX

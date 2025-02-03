@@ -123,7 +123,7 @@ public class PlayerController : MonoBehaviour
 
         // False on no hit
         _isGrounded = false;
-        _lastGroundedOnRealGround = false;
+        //_lastGroundedOnRealGround = false;
     }
 
     public void HurtPlayer(int damage)
