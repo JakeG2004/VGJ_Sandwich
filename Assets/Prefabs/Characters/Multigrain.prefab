@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 583115659658602513}
   - component: {fileID: 8079051263529958599}
   m_Layer: 2
-  m_Name: Brioche
+  m_Name: Multigrain
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

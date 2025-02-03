@@ -1,7 +1,7 @@
 using UnityEngine;
 using Unity.Cinemachine;
 
-public class CharacterController : MonoBehaviour
+public class CharacterManager : MonoBehaviour
 {
     [SerializeField] private KeyCode _nextChar = KeyCode.E;
     [SerializeField] private KeyCode _lastChar = KeyCode.Q;

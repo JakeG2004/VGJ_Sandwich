@@ -17,6 +17,11 @@ public class FlipAnimWtihRBVelocity : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(_rb.linearVelocityX == 0)
+        {
+            return;
+        }
+        
         if(!_reverse)
         {
             _sr.flipX = (_rb.linearVelocityX > 0);

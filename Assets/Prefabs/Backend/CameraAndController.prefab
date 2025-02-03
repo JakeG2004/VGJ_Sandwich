@@ -189,10 +189,10 @@ MonoBehaviour:
   chars:
   - {fileID: 2866223673608657128, guid: ce22ae171c8267f498413066da44c4b8, type: 3}
   - {fileID: 3789102870048553076, guid: 0c3e161fe6ffba9f5b527969d79831a2, type: 3}
-  - {fileID: 3789102870048553076, guid: e6f8d2ddbc7bff715bc445f9d4b6a0d5, type: 3}
   - {fileID: 3789102870048553076, guid: 38fc152eb924c8ed58a02d9503fc44e7, type: 3}
   - {fileID: 3789102870048553076, guid: 42f8c6c7332ddb5e1a7d3539dce1e8cf, type: 3}
+  - {fileID: 3789102870048553076, guid: e6f8d2ddbc7bff715bc445f9d4b6a0d5, type: 3}
   - {fileID: 3789102870048553076, guid: 49386b172502b51778e15008e4e83632, type: 3}
-  _maxChar: 5
+  _maxChar: 0
   _player: {fileID: 0}
   _CMCam: {fileID: 0}
